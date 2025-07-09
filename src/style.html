@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TrendyU – Discover the latest in fashion." />
+  <meta name="keywords" content="fashion, trends, style, clothing, accessories" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Maha Ebrahim" />
+  <title>TrendyU - Style</title>
+  <link rel="icon" href="./images/woman.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<body style="background-color: #B3C8CF;">
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar" style="background-color: #748084;" aria-label="Main Navigation">
+      <table>
+        <tr>
+          <td><img src="./images/woman.png" alt="TrendyU Logo" width="100" height="100" /></td>
+          <td><h1 style="margin-left: 10px;">TrendyU</h1></td>
+          <td colspan="2">
+            <ul class="nav-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./blog.html">Articles</a></li>
+              <li><a href="./style.html">Your Style</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <br />
+    <section align="center" style="background-color: #95a6ab; padding: 20px;" aria-label="Style Preferences Form Section">
+      <form action="#" method="post" autocomplete="off" aria-label="Submit your fashion style preferences">
+
+        <!-- Basic Info -->
+        <fieldset>
+          <legend>Basic Info</legend>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true" />
+        </fieldset>
+
+        <!-- Gender -->
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" id="female" name="gender" value="female" required aria-required="true" />
+          <label for="female">Female</label>
+
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+
+          <input type="radio" id="child" name="gender" value="child" />
+          <label for="child">Child</label>
+        </fieldset>
+
+        <!-- Style Preferences -->
+        <fieldset>
+          <legend>Which styles do you like? (Select one or more)</legend>
+
+          <input type="checkbox" id="casual" name="style" value="casual" />
+          <label for="casual">Casual</label>
+
+          <input type="checkbox" id="elegant" name="style" value="elegant" />
+          <label for="elegant">Elegant</label>
+
+          <input type="checkbox" id="sporty" name="style" value="sporty" />
+          <label for="sporty">Sporty</label>
+
+          <input type="checkbox" id="classic" name="style" value="classic" />
+          <label for="classic">Classic</label>
+        </fieldset>
+
+        <!-- Favorite Brand -->
+        <fieldset>
+          <legend>Favorite Brand</legend>
+          <label for="brand">Choose or type your favorite fashion brand:</label>
+          <input type="text" id="brand" name="brand" list="brands" placeholder="e.g. Zara, H&M" aria-label="Enter your favorite fashion brand" />
+          <datalist id="brands">
+            <option value="Zara">
+            <option value="H&M">
+            <option value="Mango">
+            <option value="Shein">
+            <option value="Modanisa">
+          </datalist>
+        </fieldset>
+
+        <!-- Color Preference -->
+        <fieldset>
+          <legend>Which color do you prefer?</legend>
+          <label for="color">Choose one:</label>
+          <select id="color" name="color" required aria-required="true" aria-label="Select preferred color style">
+            <option value="">-- Select --</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="pastel">Pastel</option>
+            <option value="bold">Bold colors</option>
+          </select>
+        </fieldset>
+
+        <!-- Upload Style Photo -->
+        <fieldset>
+          <legend>Upload Your Style Photo</legend>
+          <label for="styleImage">Choose an image:</label>
+          <input type="file" id="styleImage" name="styleImage" accept="image/*" aria-label="Upload a photo showing your fashion style" />
+        </fieldset>
+
+        <!-- Additional Notes -->
+        <fieldset>
+          <legend>Tell us anything else</legend>
+          <label for="notes">Additional notes:</label><br />
+          <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Write here..." aria-label="Add extra notes or preferences"></textarea>
+        </fieldset>
+
+        <!-- Submit -->
+        <br />
+        <input type="submit" value="Submit" aria-label="Submit your fashion style form" />
+        <br />
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color: #748084;" aria-label="Footer contact information">
+    <address>
+      TrendyU HQ, 123 Fashion Ave, Style City<br />
+      Email: <a href="mailto:contact@trendyu.com">contact@trendyu.com</a><br />
+      Phone: +1 (555) 123-4567<br />
+    </address>
+    <hr />
+    <p>&copy; 2025 TrendyU. All rights reserved. 👗</p>
+  </footer>
+
+  <script src="./Js/index.js"></script>
+</body>
+</html>
