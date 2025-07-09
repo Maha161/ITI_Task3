@@ -1,4 +1,4 @@
-# 👗 TrendyU — Responsive Fashion Website
+# 👗 TrendyU — Fashion Website
 
 TrendyU is a modern and accessible fashion website where users can explore stylish products, discover fashion trends, and customize their style preferences.
 
